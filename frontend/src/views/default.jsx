@@ -1,6 +1,6 @@
 const React = require('react')
 
-function Def(html) {
+function Def (html) {
     return(
         <html>
             <head>
@@ -14,13 +14,13 @@ function Def(html) {
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href ="/places/add">Add a Job</a>
+                            <a href ="/addjobs">Add a Job</a>
                         </li>
                         <li>
-                            <a href="/places/more">More Jobs</a>
+                            <a href="/morejobs">More Jobs</a>
                         </li>
                         <li>
-                            <a href="/places/about">About Us</a>
+                            <a href="/about">About Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -28,3 +28,5 @@ function Def(html) {
         </html>
     )
 }
+
+module.exports = Def
