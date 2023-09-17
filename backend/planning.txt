@@ -1,0 +1,5 @@
+CONTROLLERS: 
+- Create(get)
+- Read(get)
+- Update(post)
+- Delete(Delete)
