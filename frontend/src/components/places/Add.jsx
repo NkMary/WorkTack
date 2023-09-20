@@ -12,6 +12,20 @@ function AddJob() {
     location: "",
     contact: "",
   });
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+
+    await fetch('http://localhost:5000/jobs', {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(job)
+
+    })
+    navigate.push('/jobs')
+  }
   return (
     <main>
       <h1>Add a Job Listing</h1>
