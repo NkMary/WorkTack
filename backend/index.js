@@ -29,6 +29,6 @@ app.use(function (err, req, res, next) {
 })
 
 //LISTEN
-app.listen(process.env.port || 5001, () => {
+app.listen(process.env.port || 5000, () => {
     console.log('listening on port', PORT)
 })
