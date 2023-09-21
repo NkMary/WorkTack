@@ -56,7 +56,7 @@ function JobDetail() {
 					<br />
 					<a className="btn btn-warning" onClick={editJob}>
 						Edit
-					</a>{` `}
+					</a>{`href=`}
 					<button type="submit" className="btn btn-danger" onClick={deleteJob}>
 						Delete
 					</button>
