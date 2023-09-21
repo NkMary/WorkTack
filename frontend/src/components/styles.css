@@ -2,7 +2,7 @@
     background-color: white;
     color: #415A77;
     display: flex;
-    justify-content:left;
+    justify-content:space-evenly;
     padding: 20px;
     font-family: Verdana;
     font-size: large;
