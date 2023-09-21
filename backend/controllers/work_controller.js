@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
       console.log(err)
       res.render('error404')
     })
+    console.log('test')
   })
 
 router.post('/', async (req, res) => {
