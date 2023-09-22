@@ -7,7 +7,7 @@ function More () {
 
     useEffect(()=>{
         const fetchData = async () => {
-            const response = await fetch ('http://localhost:5001/jobs')
+            const response = await fetch ('http://localhost:5000/jobs')
             const resData = await response.json()
             setJobs(resData)
 
@@ -18,8 +18,11 @@ function More () {
     let jobsFormatted = jobs.map((job) => {
         return(
             <div key={job._id}>
-                <h1> 
-                {job.business} </h1>
+                <h1> {job.business} </h1>
+				<h4> {job.title}</h4>
+				<p> {job.description}</p>
+				<p> {job.location}</p>
+ 
                 <a href="#" onClick={() => navigate.push(`/jobs/${job.jobId}`)} >
 						{job.name}
 					</a>
@@ -32,7 +35,7 @@ function More () {
         <h1>More Jobs</h1>
         {jobsFormatted}
         </>    
-		)
+  )
  }
 
 export default More;
