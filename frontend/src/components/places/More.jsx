@@ -2,8 +2,8 @@ import {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
 
 function More () {
-    const [jobs,setJobs] = useState([])
-	const navigate=useNavigate();
+    const [jobs,setJobs] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(()=>{
         const fetchData = async () => {
@@ -22,6 +22,10 @@ function More () {
 				<h4> {job.title}</h4>
 				<p> {job.description}</p>
 				<p> {job.location}</p>
+ 
+                <a href="#" onClick={() => navigate.push(`/jobs/${job.jobId}`)} >
+						{job.name}
+					</a>
             </div>
         )
     })
